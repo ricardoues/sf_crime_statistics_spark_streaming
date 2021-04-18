@@ -22,3 +22,7 @@ You may choose to create your project in the workspace we provide here, or if yo
 
 ## Files 
 [producer_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/producer_server.py)
+
+[kafka_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/kafka_server.py)
+
+[data_stream.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/data_stream.py)
