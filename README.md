@@ -19,10 +19,25 @@ You may choose to create your project in the workspace we provide here, or if yo
 * Kafka build with Scala 2.11.x
 * Python 3.6.x or 3.7.x
 
+## Step 1 
+In this step we completed the following codes: 
+
+[producer_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/producer_server.py)
+
+
+[kafka_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/kafka_server.py)
+
+
+
+## Step 2 
+
 
 ## Files 
+[consumer_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/consumer_server.py)
+
 [producer_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/producer_server.py)
 
 [kafka_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/kafka_server.py)
 
 [data_stream.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/data_stream.py)
+
