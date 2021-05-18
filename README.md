@@ -30,7 +30,22 @@ In this step we completed the following codes:
 ![Image of kafka-consumer-console output](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/raw/main/img/screen_shot1.png)
 
 ## Step 2 
+In this step we completed the following code: 
 
+[data_stream.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/data_stream.py)
+
+In the first time we run the above code as follows: 
+
+<code>
+    spark-submit --conf spark.ui.port=3000  --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py  
+</code>
+
+
+![Image of kafka-consumer-console output](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/raw/main/img/screen_shot2.png)
+
+![Image of kafka-consumer-console output](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/raw/main/img/screen_shot3.png)
+
+![Image of kafka-consumer-console output](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/raw/main/img/screen_shot4.png)
 
 ## Files 
 [consumer_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/consumer_server.py)
