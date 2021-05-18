@@ -10,7 +10,6 @@ class ProducerServer(KafkaProducer):
         self.input_file = input_file
         self.topic = topic
 
-    #TODO we're generating a dummy data
     #The following web page was very helpful
     #https://knowledge.udacity.com/questions/338547
     
@@ -21,16 +20,11 @@ class ProducerServer(KafkaProducer):
             
             for line in data:
                 message = self.dict_to_binary(line)
-                # TODO send the correct data -- completed 
                 
+                # Sending the correct data -- completed                 
                 print(f"Sending message {message}")                
                 self.send(self.topic, message)                
-                #try:
-                #    self.send(self.topic, message)
-                #except Exception as e:
-                #    print(f"An exception ocurred {e}")
-                
-                time.sleep(1)
+                time.sleep(10)
 
     # TODO fill this in to return the json dictionary to binary --completed 
     def dict_to_binary(self, json_dict):
