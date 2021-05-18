@@ -27,7 +27,7 @@ In this step we completed the following codes:
 
 [kafka_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/kafka_server.py)
 
-
+![Image of kafka-consumer-console output](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/raw/main/img/screen_shot1.png)
 
 ## Step 2 
 
