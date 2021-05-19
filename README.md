@@ -58,8 +58,7 @@ Write the answers to these questions in the README.md doc of your GitHub repo:
 
 |Configuration of the SparkSession property parameters |The result is between|
 |---|---|
-|All SparkSession property parameters have the default values.
-   | 0.36,0.64  |
+|All SparkSession property parameters have the default values|0.36,0.64 |
 |aaa   |bbbb   |
 
 
