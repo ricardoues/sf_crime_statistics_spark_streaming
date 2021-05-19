@@ -63,9 +63,10 @@ In order to answer the above questions we try different configs in SparkSesion. 
 |spark.driver.maxResultSize=1M| 0.14,0.69   |
 
 Note: In order to try configs in SparkSession we have to run 
-data_stream.py as follows(spark.driver.maxResultSize=1M): 
+data\_stream.py as follows(spark.driver.maxResultSize=1M): 
+
 <code>
-spark-submit --conf spark.ui.port=3000 --conf spark.driver.maxResultSize=1M --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py
+spark-submit --conf spark.ui.port=3000 --conf spark.driver.maxResultSize=1M --packages org.apache.spark:spark-sql-kafka-0-10\_2.11:2.3.4 --master local[*] data_stream.py
 </code>
 
 
