@@ -47,6 +47,22 @@ In the first time we run the above code as follows:
 
 ![Image of kafka-consumer-console output](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/raw/main/img/screen_shot4.png)
 
+## Step 3 
+
+Write the answers to these questions in the README.md doc of your GitHub repo:
+
+1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
+
+2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
+
+
+|Configuration of the SparkSession property parameters | Result |
+|---|---|
+|All SparkSession property parameters have the defaul values.
+   | The result is   |
+|aaa   |bbbb   |
+
+
 ## Files 
 [consumer_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/consumer_server.py)
 
