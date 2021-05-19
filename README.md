@@ -56,10 +56,10 @@ Write the answers to these questions in the README.md doc of your GitHub repo:
 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
 
 
-|Configuration of the SparkSession property parameters | Result |
+|Configuration of the SparkSession property parameters |The result is between|
 |---|---|
-|All SparkSession property parameters have the defaul values.
-   | The result is   |
+|All SparkSession property parameters have the default values.
+   | 0.36,0.64  |
 |aaa   |bbbb   |
 
 
