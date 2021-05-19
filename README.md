@@ -61,8 +61,11 @@ In order to answer the above questions we try different configs in SparkSesion. 
 |---|---|
 |All SparkSession property parameters have the default values|0.36,0.64 |
 |spark.driver.maxResultSize=1M| 0.14,0.69   |
+|spark.driver.maxResultSize=10M|0.35, 1.15    |
+|spark.driver.maxResultSize=100M|0.36, 0.99  |
 
-Note: In order to try configs in SparkSession we have to run 
+
+**Note**: In order to try configs in SparkSession we have to run 
 data\_stream.py as follows(spark.driver.maxResultSize=1M): 
 
 <code>
