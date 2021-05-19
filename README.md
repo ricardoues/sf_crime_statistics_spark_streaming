@@ -55,11 +55,12 @@ Write the answers to these questions in the README.md doc of your GitHub repo:
 
 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
 
+In order to answer the above questions we try different configs in SparkSesion. The results are shown in the table below. We use the value of processedRowsPerSecond as a means for measuring the throughput and latency of the data.  
 
 |Configuration of the SparkSession property parameters |The result is between|
 |---|---|
 |All SparkSession property parameters have the default values|0.36,0.64 |
-|aaa   |bbbb   |
+|spark.driver.maxResultSize=1M| 0.14,0.69   |
 
 
 ## Files 
