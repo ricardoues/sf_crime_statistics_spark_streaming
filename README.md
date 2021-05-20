@@ -101,6 +101,10 @@ data\_stream.py as follows(spark.driver.maxResultSize=1M):
 spark-submit --conf spark.ui.port=3000 --conf spark.driver.maxResultSize=1M --packages org.apache.spark:spark-sql-kafka-0-10\_2.11:2.3.4 --master local[*] data_stream.py
 </code>
 
+**Answers**:
+1. In some cases the throughput and latency of the data was affected as in the following SparkSession property parameters:
+    * spark.driver.maxResultSize
+    * spark.python.worker.memory 
 
 ## Files 
 [consumer_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/consumer_server.py)
