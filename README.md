@@ -72,6 +72,25 @@ In order to answer the above questions we try different configs in SparkSesion. 
 |spark.executor.logs.rolling.maxSize=90000|0.39, 1.11| 
 |spark.executor.logs.rolling.maxSize=95000|0.86, 1.20| 
 |spark.executor.logs.rolling.maxSize=100000|0.49, 1.11| 
+|spark.python.worker.memory=100m|0.08, 0.44| 
+|spark.python.worker.memory=200m|0.09, 0.58| 
+|spark.python.worker.memory=300m|0.12 ,1.17| 
+|spark.python.worker.memory=400m|0.39 ,1.20| 
+|spark.python.worker.reuse=true|0.39 ,0.93| 
+|spark.python.worker.reuse=false|0.39 ,1.02| 
+|spark.reducer.maxSizeInFlight=20m|0.09 ,0.82| 
+|spark.reducer.maxSizeInFlight=50m|0.46 ,1.01| 
+|spark.reducer.maxSizeInFlight=60m|0.71 ,1.23| 
+|spark.reducer.maxSizeInFlight=70m|0.55 ,1.075| 
+|spark.shuffle.compress=true|0.42, 1.09| 
+|spark.shuffle.compress=false|0.42, 1.08| 
+|spark.shuffle.file.buffer=20k|0.42, 1.25| 
+|spark.shuffle.file.buffer=30k|0.43, 1.24| 
+|spark.shuffle.file.buffer=40k|0.43, 1.13| 
+|spark.shuffle.file.buffer=50k|0.42, 1.11| 
+|spark.shuffle.file.buffer=100k|0.98, 1.07| 
+|spark.eventLog.compress=true|0.58, 1.04| 
+|spark.eventLog.compress=false|0.41, 1.08| 
 
 
 
