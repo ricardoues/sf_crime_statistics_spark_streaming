@@ -63,6 +63,16 @@ In order to answer the above questions we try different configs in SparkSesion. 
 |spark.driver.maxResultSize=1M| 0.14,0.69   |
 |spark.driver.maxResultSize=10M|0.35, 1.15    |
 |spark.driver.maxResultSize=100M|0.36, 0.99  |
+|spark.executor.memory=500m|0.40, 0.89 |
+|spark.executor.memory=600m|0.92, 1.05 |
+|spark.executor.memory=700m|0.40, 0.66 |
+|spark.executor.memory=800m|0.78, 0.88 |
+|spark.executor.memory=900m|0.39,0.98 |
+|spark.executor.logs.rolling.enableCompression=true|0.41, 1.07| 
+|spark.executor.logs.rolling.maxSize=90000|0.39, 1.11| 
+|spark.executor.logs.rolling.maxSize=95000|0.86, 1.20| 
+|spark.executor.logs.rolling.maxSize=100000|0.49, 1.11| 
+
 
 
 **Note**: In order to try configs in SparkSession we have to run 
@@ -82,3 +92,6 @@ spark-submit --conf spark.ui.port=3000 --conf spark.driver.maxResultSize=1M --pa
 
 [data_stream.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/data_stream.py)
 
+## References 
+
+https://stackoverflow.com/questions/40282031/spark-executor-log-stderr-rolling
