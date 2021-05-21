@@ -103,9 +103,26 @@ spark-submit --conf spark.ui.port=3000 --conf spark.driver.maxResultSize=1M --pa
 </code>
 
 **Answers**:
-1. In some cases the throughput and latency of the data was affected as in the following SparkSession property parameters:
+1. In some cases the processedRowsPerSecond was affected as in the following SparkSession property parameters:
     * spark.driver.maxResultSize
+    * spark.executor.logs.rolling.enableCompression
     * spark.python.worker.memory 
+    * spark.reducer.maxSizeInFlight
+    * spark.shuffle.file.buffer
+
+But in other cases the processedRowsPerSecond was not affected as in the following SparkSession property parameters: 
+    * spark.executor.memory
+    * spark.executor.logs.rolling.maxSize
+    * spark.python.worker.reuse
+    * spark.shuffle.compress
+    * spark.eventLog.compress
+
+There are SparkSession property parameters that are related (those that end in compress) but only one of them affects the processedRowsPerSecond. 
+
+2. The 2 most efficient SparkSession property key/value pairs are:     * spark.executor.logs.rolling.enableCompression
+    * spark.python.worker.memory
+
+It makes sense that the above SparkSession property parameters were the most optimal. The first enables executor log compression and the second controls the amount of memory to use per python worker process during aggregation.  
 
 ## Files 
 [consumer_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/consumer_server.py)
@@ -119,3 +136,6 @@ spark-submit --conf spark.ui.port=3000 --conf spark.driver.maxResultSize=1M --pa
 ## References 
 
 https://stackoverflow.com/questions/40282031/spark-executor-log-stderr-rolling
+
+https://spark.apache.org/docs/latest/configuration.html
+
