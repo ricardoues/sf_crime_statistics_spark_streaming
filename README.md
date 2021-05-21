@@ -69,6 +69,7 @@ In order to answer the above questions we try different configs in SparkSesion. 
 |spark.executor.memory=800m|0.78, 0.88 |
 |spark.executor.memory=900m|0.39,0.98 |
 |spark.executor.logs.rolling.enableCompression=true|0.41, 1.07| 
+|spark.executor.logs.rolling.enableCompression=false|0.09, 0.40| 
 |spark.executor.logs.rolling.maxSize=90000|0.39, 1.11| 
 |spark.executor.logs.rolling.maxSize=95000|0.86, 1.20| 
 |spark.executor.logs.rolling.maxSize=100000|0.49, 1.11| 
