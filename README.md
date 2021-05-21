@@ -122,7 +122,7 @@ There are SparkSession property parameters that are related (those that end in c
 2. The 2 most efficient SparkSession property key/value pairs are:     * spark.executor.logs.rolling.enableCompression
     * spark.python.worker.memory
 
-It makes sense that the above SparkSession property parameters were the most optimal. The first enables executor log compression and the second controls the amount of memory to use per python worker process during aggregation.  
+It makes sense that the above SparkSession property parameters were the most optimal. The first enables executor log compression and the second controls the amount of memory to use per python worker process during aggregation. The only observation is that one would expect that if spark.executor.logs.rolling.enableCompression is set to false the values of the processedRowsPerSecond should be greater than when processedRowsPerSecond is set to true.  
 
 ## Files 
 [consumer_server.py](https://github.com/ricardoues/sf_crime_statistics_spark_streaming/blob/main/consumer_server.py)
